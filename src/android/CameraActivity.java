@@ -421,7 +421,7 @@ public class CameraActivity extends Fragment {
           int rotation = exifInterface.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL);
           int rotationInDegrees = exifToDegrees(rotation);
 
-          if (rotation != 0f || rotation != 1) {
+          if (rotation != 0f && rotation != 1) {
             matrix.preRotate(rotationInDegrees);
           } else if ( mPreview.getDisplayOrientation() == 180 || mPreview.getDisplayOrientation() == 0) {
             // This is to fix rotation issues on tested Fire devices and Insignia device. If landscape, flip.

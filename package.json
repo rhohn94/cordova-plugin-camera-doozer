@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-doozer-camera",
+  "version": "0.1.0",
+  "description": "Custom camera plugin based on cordova-plugin-camera-preview.",
+  "main": "CameraPreview.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Hohn",
+  "license": "MIT"
+}

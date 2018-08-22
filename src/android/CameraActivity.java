@@ -546,7 +546,11 @@ public class CameraActivity extends Fragment {
 
       new Thread() {
         public void run() {
-          System.out.println("Testing print...");
+           if (mCamera == null) {
+            eventListener.onPictureTakenError("mCamera was null. Picture not taken.");
+            return;
+          }
+          
           Camera.Parameters params = mCamera.getParameters();
 
           Camera.Size size = getOptimalPictureSize(width, height, params.getPreviewSize(), params.getSupportedPictureSizes());

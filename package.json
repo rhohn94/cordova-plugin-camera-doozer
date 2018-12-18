@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-doozer-camera",
+  "name": "cordova-plugin-camera-doozer",
   "version": "0.1.0",
   "description": "Custom camera plugin based on cordova-plugin-camera-preview.",
   "main": "CameraPreview.js",
